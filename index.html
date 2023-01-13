@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>スライドショー課題</title>
+</head>
+<body>
+    <h1>スライドショー</h1>
+    <div class="slide">
+        <div class="image_box">
+            <img id="main_image" src="./img/pancake.jpeg" alt="メイン画像">
+        </div>
+        <div class="toolbar">
+            <div class="nav">
+                <div id="prev"></div>
+                <span id="page"></span>
+                <div id="next"></div>
+            </div>
+        </div>
+    </div>
+    <div class="thumb_area">
+        <ul>
+            <li><img src="./img/pancake.jpeg" class="thumb" data-image="./img/pancake.jpeg" alt="サムネイル画像1"></li>
+            <li><img src="./img/prin.jpeg" class="thumb" data-image="./img/prin.jpeg" alt="サムネイル画像2"></li>
+            <li><img src="./img/syu-cream.jpeg" class="thumb" data-image="./img/syu-cream.jpeg" alt="サムネイル画像3"></li>
+        </ul>
+    </div>
+    <script src="./js/slide.js"></script>
+</body>
+</html>

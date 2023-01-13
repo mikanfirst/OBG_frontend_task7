@@ -1,0 +1,64 @@
+
+
+.slide {
+    margin: 0 auto;
+    border: 1px solid #000;
+    width: 600px;
+    background-color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+.toolbar {
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav {
+    display: inline-block;
+}
+
+#prev {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+/* 疑似要素で画像の代わりを作成 */
+#prev::after {
+    content: '<';
+    color: #fff;
+}
+
+#next {
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+/* 疑似要素で画像の代わりを作成 */
+#next::after {
+    content: '>';
+    color: #fff;
+}
+
+#page {
+    float: left;
+    height: 32px;
+    color: #fff;
+}
+
+.thumb_area ul {
+    padding: 0;
+    text-align: center;
+}
+
+.thumb_area ul li {
+    display: inline-flex; /* 横並び */
+    list-style-type: none; /* liの「・」を削除 */
+}
+
+.thumb_area ul li img:hover {
+    cursor: pointer; /* カーソル変更 */
+    opacity: 0.5; /* 透明度 */
+}
